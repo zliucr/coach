@@ -18,7 +18,7 @@ In this paper, we propose a Coarse-to-fine approach (Coach) for cross-domain slo
 Experimental results show that our model significantly outperforms state-of-the-art approaches in slot filling. Furthermore, our model can also be applied to the cross-domain named entity recognition task, and it achieves better adaptation performance than other existing baselines.
 
 ## Coach Framework
-<img src="imgs/coach_framework.jpg" width=100%/>
+<img src="imgs/coach_framework.jpg" width=85%/>
 
 ## Data
 - ```Cross-domain Slot Filling:``` Evaluated on [SNIPS](https://arxiv.org/pdf/1805.10190.pdf) dataset, which contains 39 slot types across seven domains (intents) and ~2000 training samples per domain.

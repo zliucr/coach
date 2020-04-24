@@ -6,15 +6,15 @@
 
 This repository is for the ACL-2020 paper: [Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling](path_to_the_arxiv_link). It contains the scripts for the coach framework and the baseline models [CT](https://arxiv.org/pdf/1707.02363.pdf) and [RZT](https://arxiv.org/pdf/1906.06870.pdf).
 
-This code has been written using PyTorch. If you use any source codes or ideas included in this repository for your work, please cite the following paper.
+This code has been written using PyTorch. If you use any source codes or ideas included in this repository for your work, please cite the following paper (Arxiv preprint version will be available soon).
 <pre>
 bibtext
 </pre>
 
 ## Abstract
-As an essential task in task-oriented dialog systems, slot filling requires extensive training data in a certain domain. However such data are not always available.
-Hence, cross-domain slot filling naturally arises to cope with this data scarcity problem.
-In this paper, we propose a Coarse-to-fine approach (Coach) for cross-domain slot filling. Our model first learns the general pattern of slot entities by detecting whether the tokens are slot entities or not. It then predicts the specific types for the slot entities. In addition, we propose a template regularization approach to improve the adaptation robustness by regularizing the representation of utterances based on utterance templates.
+As an essential task in task-oriented dialog systems, slot filling requires extensive training data in a certain domain. However, such data are not always available.
+Hence, cross-domain slot filling has naturally arisen to cope with this data scarcity problem.
+In this paper, we propose a Coarse-to-fine approach (Coach) for cross-domain slot filling. Our model first learns the general pattern of slot entities by detecting whether tokens are slot entities or not. It then predicts the specific types for the slot entities. In addition, we propose a template regularization approach to improve the adaptation robustness by regularizing the representation of utterances based on utterance templates.
 Experimental results show that our model significantly outperforms state-of-the-art approaches in slot filling. Furthermore, our model can also be applied to the cross-domain named entity recognition task, and it achieves better adaptation performance than other existing baselines.
 
 ## Coach Framework
@@ -34,7 +34,7 @@ Preprocessing scripts for cross-domain slot filling and NER are in the preproces
 
 ### Notes
 - We utilize [fastText](https://fasttext.cc/docs/en/pretrained-vectors.html) to get the word-level embeddings including the embeddings for those out of vocabulary (oov) words.
-- The original datasets, the preprocessed data and the preprocessed embeddings can be downloaded [here](LINK_TO_THE_DATA) (All in the data folder).
+- The original datasets, the preprocessed data and the preprocessed embeddings can be downloaded [here](https://drive.google.com/drive/folders/1ydalMtB-hpfS3SIEaR5UbRfEe2m8bFcj?usp=sharing) (All in the data folder).
 
 ## How to run
 ### Configuration
@@ -93,4 +93,4 @@ python ner_baseline.py --exp_name rzt --exp_id ner_0 --bidirection --emb_file ./
 
 ### Notes
 - More running commands can be found in run.sh
-- All the models can be downloaded [here](LINK_TO_THE_EXPERIMENTS) (in the experiments folder) to reproduce our results.
+- All the models can be downloaded [here](https://drive.google.com/drive/folders/1ydalMtB-hpfS3SIEaR5UbRfEe2m8bFcj?usp=sharing) (in the experiments folder) to reproduce our results.

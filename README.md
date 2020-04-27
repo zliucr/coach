@@ -4,11 +4,16 @@
 
 <img align="right" src="imgs/HKUST.jpg" width="15%">
 
-This repository is for the ACL-2020 paper: [Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling](path_to_the_arxiv_link). It contains the scripts for the coach framework and the baseline models [CT](https://arxiv.org/pdf/1707.02363.pdf) and [RZT](https://arxiv.org/pdf/1906.06870.pdf).
+This repository is for the ACL-2020 paper: [Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling](https://128.84.21.199/abs/2004.11727). It contains the scripts for the coach framework and the baseline models [CT](https://arxiv.org/pdf/1707.02363.pdf) and [RZT](https://arxiv.org/pdf/1906.06870.pdf).
 
-This code has been written using PyTorch. If you use any source codes or ideas included in this repository for your work, please cite the following paper (Arxiv preprint version will be available soon).
+This code has been written using PyTorch. If you use any source codes or ideas included in this repository for your work, please cite the following paper.
 <pre>
-bibtext
+@article{liu2020coach,
+    title={Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling},
+    author={Zihan Liu and Genta Indra Winata and Peng Xu and Pascale Fung},
+    journal={arXiv preprint arXiv:2004.11727}
+    year={2020},
+}
 </pre>
 
 ## Abstract

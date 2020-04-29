@@ -11,7 +11,7 @@ This code has been written using PyTorch. If you use any source codes or ideas i
 @article{liu2020coach,
     title={Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling},
     author={Zihan Liu and Genta Indra Winata and Peng Xu and Pascale Fung},
-    journal={arXiv preprint arXiv:2004.11727}
+    journal={arXiv preprint arXiv:2004.11727},
     year={2020},
 }
 </pre>

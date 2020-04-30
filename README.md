@@ -51,48 +51,48 @@ Preprocessing scripts for cross-domain slot filling and NER are in the [preproce
 
 ### Cross-domain Slot Filling
 Train Coach model for 50-shot adaptation to AddToPlaylist domain
-```
+```console
 ❱❱❱ python slu_main.py --exp_name coach_lstmenc --exp_id atp_50 --bidirection --freeze_emb --tgt_dm PlayMusic --n_samples 50
 ```
 
 Train Coach + Template Regularization (TR) for 50-shot adaptation to AddToPlaylist domain
-```
+```console
 ❱❱❱ python slu_main.py --exp_name coach_tr_lstmenc --exp_id atp_50 --bidirection --freeze_emb --tr --tgt_dm AddToPlaylist --emb_file ./data/snips/emb/slu_word_char_embs_with_slotembs.npy --n_samples 50
 ```
 
 Train CT model (baseline) for 50-shot adaptation to AddToPlaylist target domain
-```
+```console
 ❱❱❱ python slu_baseline.py --exp_name ct --exp_id atp_50 --bidirection --freeze_emb --lr 1e-4 --hidden_dim 300 --tgt_dm AddToPlaylist --n_samples 50
 ```
 
 Train RZT model (baseline) for 50-shot adaptation to AddToPlaylist target domain
-```
+```console
 ❱❱❱ python slu_baseline.py --exp_name rzt --exp_id atp_50 --bidirection --freeze_emb --lr 1e-4 --hidden_dim 200 --use_example --tgt_dm AddToPlaylist --n_samples 50
 ```
 
 Test Coach model on the AddToPlaylist target domain
-```
+```console
 ❱❱❱ python slu_test.py --model_path ./experiments/coach/atp_50/best_model.pth --model_type coach --n_samples 50 --tgt_dm AddToPlaylist
 ```
 
 Test Coach model on seen and unseen slots for the AddToPlaylist target domain
-```
+```console
 ❱❱❱ python slu_test.py --model_path ./experiments/coach_lstmenc/atp_50/best_model.pth --model_type coach --n_samples 50 --tgt_dm AddToPlaylist --test_mode seen_unseen
 ```
 
 ### Cross-domain NER
 Train Coach model for zero-shot adaptation
-```
+```console
 ❱❱❱ python ner_main.py --exp_name coach --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --trs_hidden_dim 300 --lr 1e-4
 ```
 
 Train CT model for zero-shot adaptation
-```
+```console
 ❱❱❱ python ner_baseline.py --exp_name ct --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4
 ```
 
 Train RZT model for zero-shot adaptation
-```
+```console
 ❱❱❱ python ner_baseline.py --exp_name rzt --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4 --hidden_dim 150 --use_example
 ```
 

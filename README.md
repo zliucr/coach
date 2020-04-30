@@ -4,7 +4,7 @@
 
 <img align="right" src="imgs/HKUST.jpg" width="15%">
 
-This repository is for the ACL-2020 paper: [Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling](https://128.84.21.199/abs/2004.11727). It contains the scripts for the coach framework and the baseline models [CT](https://arxiv.org/pdf/1707.02363.pdf) and [RZT](https://arxiv.org/pdf/1906.06870.pdf).
+This repository is for the ACL-2020 paper: [Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling](https://arxiv.org/abs/2004.11727). It contains the scripts for the coach framework and the baseline models [CT](https://arxiv.org/pdf/1707.02363.pdf) and [RZT](https://arxiv.org/pdf/1906.06870.pdf).
 
 This code has been written using PyTorch. If you use any source codes or ideas included in this repository for your work, please cite the following paper.
 <pre>

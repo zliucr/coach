@@ -8,11 +8,20 @@ This repository is for the ACL-2020 paper: [Coach: A Coarse-to-Fine Approach for
 
 This code has been written using PyTorch. If you use any source codes or ideas included in this repository for your work, please cite the following paper.
 <pre>
-@article{liu2020coach,
-    title={Coach: A Coarse-to-Fine Approach for Cross-domain Slot Filling},
-    author={Zihan Liu and Genta Indra Winata and Peng Xu and Pascale Fung},
-    journal={arXiv preprint arXiv:2004.11727},
-    year={2020},
+@inproceedings{liu2020coach,
+    title = "{C}oach: A Coarse-to-Fine Approach for Cross-domain Slot Filling",
+    author = "Liu, Zihan  and
+      Winata, Genta Indra  and
+      Xu, Peng  and
+      Fung, Pascale",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.acl-main.3",
+    doi = "10.18653/v1/2020.acl-main.3",
+    pages = "19--25",
 }
 </pre>
 

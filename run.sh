@@ -115,12 +115,15 @@ python slu_main.py --exp_name coach_sum --exp_id atp_50 --bidirection --freeze_e
 ### Zero-shot
 # baseline BiLSTM-CRF
 python ner_baseline.py --exp_name lstm --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4 --bilstmcrf
+python ner_baseline.py --exp_name lstm --exp_id ner_frozen_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4 --bilstmcrf --freeze_emb
 
 # baseline CT
 python ner_baseline.py --exp_name ct --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4
+python ner_baseline.py --exp_name ct --exp_id ner_frozen_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4 --freeze_emb
 
 # baseline RZT
 python ner_baseline.py --exp_name rzt --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4 --hidden_dim 150 --use_example
+python ner_baseline.py --exp_name rzt --exp_id ner_frozen_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --lr 1e-4 --hidden_dim 150 --use_example --freeze_emb
 
 # coach
 python ner_main.py --exp_name coach_lstmenc --exp_id ner_0 --bidirection --emb_file ./data/ner/emb/ner_embs.npy --emb_dim 300 --trs_hidden_dim 300 --lr 1e-4
